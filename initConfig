@@ -9,15 +9,28 @@ sudo pacman -S firefox
 #sudo pacman -S oxygen-gtk2 oxygen-gtk3 oxygen-icons
 #EDITOR DE LATEX
 sudo pacman -S kile
- 
+# 
 sudo pacman -S wget
 #FLASH PLAYER
 sudo pacman -S flashplugin
 #FUENTES PARA EL SISTEMA
-sudo pacman -S ttf-sazanami wqy-microhei ttf-hanazono otf-ipafont font-mathematica ttf-ubuntu-font-family 
+sudo pacman -S wqy-microhei font-mathematica ttf-ubuntu-font-family 
 
+#TRANSMICION BITTORRENT
+sudo pacman -S transmission-gtk
 
+#ESCRITURA EN JAPONES
+sudo pacman -S anthy uim
 
+#CONFIGURACION PARA EL SISTEMA
+#TODO ESTO EN EL ARCHIVO ~/.xprofile
+#export GTK_IM_MODULE='uim'
+#export QT_IM_MODULE='uim'
+#uim-xim &
+#export XMODIFIERS='@im=uim'
+#uim-toolbar-gtk-systray &
+
+ 
 
 
 #CONFIGURACION DE LA TARJETA DE VIDEO AMD
