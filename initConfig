@@ -1,0 +1,30 @@
+#Hola a todos paso a paso de como configurar una maquina con arch linux 
+#1. Supongo que ya tienen git
+#INSTALACION DE PROGRAMAS
+#EDITOR PARA LA CONSOLA SUPER PODEROSO
+sudo pacman -S vim 
+#INSTALACION DE FIREFOX
+sudo pacman -S firefox 
+#INTEGRACION DE FIREFOX CON KDE
+#sudo pacman -S oxygen-gtk2 oxygen-gtk3 oxygen-icons
+#EDITOR DE LATEX
+sudo pacman -S kile
+ 
+sudo pacman -S wget
+#FLASH PLAYER
+sudo pacman -S flashplugin
+#FUENTES PARA EL SISTEMA
+sudo pacman -S ttf-sazanami wqy-microhei ttf-hanazono otf-ipafont font-mathematica ttf-ubuntu-font-family 
+
+
+
+
+
+#CONFIGURACION DE LA TARJETA DE VIDEO AMD
+sudo pacman -S lib32-ati-dri xf86-video-ati
+#MANEJO DEL VENTILADOR
+sudo KERNEL=="card0", SUBSYSTEM=="drm", DRIVERS=="radeon", ATTR{device/power_method}="profile", ATTR{device/power_profile}="low" > /etc/udev/rules.d/30-radeon-pm.rules 
+
+#CONFIGURACION DEL TECLADO
+sudo KEYMAP="la-latin1" > /etc/vconsole.conf
+#SI SE TRABAJA CON KDE ES NECESARIO PODER CONFIGURAR PARA TODAS LAS VENTANAS ESO SE HACE EN CONFIGURACION DEL SISTEMA
