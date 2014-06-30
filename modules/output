@@ -1,0 +1,7 @@
+make -C /lib/modules/3.15.1-1-ARCH/build M=/home/unzero/modules modules
+make[1]: Entering directory '/usr/lib/modules/3.15.1-1-ARCH/build'
+  CC [M]  /home/unzero/modules/so_module.o
+scripts/Makefile.build:324: recipe for target '/home/unzero/modules/so_module.o' failed
+Makefile:1310: recipe for target '_module_/home/unzero/modules' failed
+make[1]: Leaving directory '/usr/lib/modules/3.15.1-1-ARCH/build'
+Makefile:4: recipe for target 'all' failed
