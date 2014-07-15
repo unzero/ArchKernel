@@ -52,3 +52,12 @@ sudo pacman -S libreoffice
 pacman -S hunspell hunspell-es hunspell-en
 #SINONIMOS
 pacman -S hyphen hyphen-es
+
+#TAREAS VARIAS
+sudo pacman -S dosfstools
+sudo pacman -S ntfs
+sudo pacman -S icedtea-web-java7 
+
+
+#EN EL REPOSITORIO ACTUAL DE ENCUENTRA UN PROGRAMA MUY CHEVERE F.LUX CONTROLA LA CANTIDAD DE LUMINOSIDAD DE LA PANTALLA
+
