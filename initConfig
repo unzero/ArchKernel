@@ -10,9 +10,11 @@ sudo KERNEL=="card0", SUBSYSTEM=="drm", DRIVERS=="radeon", ATTR{device/power_met
 #CONFIGURACION DEL TECLADO
 sudo KEYMAP="la-latin1" > /etc/vconsole.conf
 #SI SE TRABAJA CON KDE ES NECESARIO PODER CONFIGURAR PARA TODAS LAS VENTANAS ESO SE HACE EN CONFIGURACION DEL SISTEMA
+#DE IGUAL MANERA CON GNOME
 
 #EDITOR PARA LA CONSOLA SUPER PODEROSO
 sudo pacman -S vim 
+#EN EL MISMO REPOSITORIO ENCUENTRAN MI .VIMRC PERSONAL
 
 #INSTALACION DE FIREFOX
 sudo pacman -S firefox 
@@ -20,9 +22,11 @@ sudo pacman -S firefox
 #sudo pacman -S oxygen-gtk2 oxygen-gtk3 oxygen-icons
 
 #EDITOR DE LATEX
-sudo pacman -S kile
-# 
-sudo pacman -S wget
+#sudo pacman -S kile
+#ESTE ES UNICAMENTE EL CORE PARA EL TRABAJO POR CONSOLA
+sudo pacman -S texlive-core
+ 
+#sudo pacman -S wget
 
 #FLASH PLAYER
 sudo pacman -S flashplugin
@@ -57,7 +61,16 @@ pacman -S hyphen hyphen-es
 sudo pacman -S dosfstools
 sudo pacman -S ntfs
 sudo pacman -S icedtea-web-java7 
-
+sudo pacman -S unrar unzip
+#ES BUEN REPRODUCTOR SIN EMBARGO HE PRESENTADO PROBLEMAS CON LOS ARCHIVOS .ASX
+sudo pacman -S vlc
+#ALTERNATIVA PARA EL REPRODUCTOR
+#sudo pacman -S totem
+#sudo pacman -S gst-libav
+#sudo pacman -S gst-plugins-ugly
 
 #EN EL REPOSITORIO ACTUAL DE ENCUENTRA UN PROGRAMA MUY CHEVERE F.LUX CONTROLA LA CANTIDAD DE LUMINOSIDAD DE LA PANTALLA
+
+#VERSION CON GNOME
+#sudo pacman -S gnome 
 
