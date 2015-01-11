@@ -4,7 +4,10 @@
 
 #CONFIGURACION DE LA TARJETA DE VIDEO AMD
 sudo pacman -S lib32-ati-dri xf86-video-ati
-#MANEJO DEL VENTILADOR
+#CONFIGURACION DE LA TARJETA DE VIDEO EN EL PORTATIL
+#sudo pacman -S lib32-video-intel nvidia bbswitch mesa bumblebee lib32-nvidia-utils lib32-mesa-libgl lib32-mesa 
+
+#MANEJO DEL VENTILADOR ¡SOLO PARA TARJETAS CONFIGURADAS BAJO EL CONTROLADOR ATI!
 sudo KERNEL=="card0", SUBSYSTEM=="drm", DRIVERS=="radeon", ATTR{device/power_method}="profile", ATTR{device/power_profile}="low" > /etc/udev/rules.d/30-radeon-pm.rules 
 
 #CONFIGURACION DEL TECLADO
@@ -18,6 +21,7 @@ sudo pacman -S vim
 
 #INSTALACION DE FIREFOX
 sudo pacman -S firefox 
+
 #INTEGRACION DE FIREFOX CON KDE
 #sudo pacman -S oxygen-gtk2 oxygen-gtk3 oxygen-icons
 
@@ -39,6 +43,7 @@ sudo pacman -S transmission-gtk
 
 #ESCRITURA EN JAPONES
 sudo pacman -S anthy uim
+#DICCIONARIO DE JAPONES
 
 #CONFIGURACION PARA UIM 
 #TODO ESTO EN EL ARCHIVO ~/.xprofile
@@ -57,6 +62,9 @@ pacman -S hunspell hunspell-es hunspell-en
 #SINONIMOS
 pacman -S hyphen hyphen-es
 
+#PROGRAMAS DE TRABAJO
+sudo pacman -S geogebra synergy 
+
 #TAREAS VARIAS
 sudo pacman -S dosfstools
 sudo pacman -S ntfs
@@ -70,7 +78,23 @@ sudo pacman -S vlc
 #sudo pacman -S gst-plugins-ugly
 
 #EN EL REPOSITORIO ACTUAL DE ENCUENTRA UN PROGRAMA MUY CHEVERE F.LUX CONTROLA LA CANTIDAD DE LUMINOSIDAD DE LA PANTALLA
+#DADO QUE NO PUDE INSTALARLO DEL REPOSITORIO OFICIAL LO QUE HAGO ES EJECUTARLO COMO UNA APP AL INICIO 
+#PARA KDE SE DEBE CONFIGURAR POR MEDIO DEL PANEL DE CONTROL 
+#PARA GNMOE SE DEBE AGREGAR LA SIGUIENTE CONFIGURACION EN EL ARCHIVO ESPECIFICADO 
+#ARCHIVO : ~/.config/autostart
+#
+#CONFIGURACION DE FLUX AL INICIO, SE DEBE UBICAR DENTRO DE UN ARCHIVO *.desktop
+#
+#[Desktop Entry]
+#Type=Application
+#Exec=/home/ui/flux/xflux -l 4.32 -g -74 -k 4200
+#Hidden=false
+#X-GNOME-Autostart-enabled=true
+#Name[en_US]=flux
+#Name=flux
+#Comment[es_CO]=flux
+#Comment=flux
 
 #VERSION CON GNOME
-#sudo pacman -S gnome 
+#sudo pacman -S gnome gnome-tweak-tool
 

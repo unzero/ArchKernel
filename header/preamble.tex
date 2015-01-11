@@ -1,0 +1,67 @@
+% INFORMACION DEL DOCUMENTO, PAQUETES ADICIONALES
+\documentclass[a4paper,10pt]{article}
+\usepackage{eso-pic}
+\usepackage{anysize}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{CJKutf8}
+\usepackage{longtable}
+\usepackage{hyperref}
+
+
+%SIRVE PARA GENERAR AUTOMATICAMENTE LAS ENUMERACIONES EN DEFINICIONES
+\newtheorem{defi}{\it DEFINICI\'ON}
+\newtheorem{algo}{\it ALGORITMO}
+\newtheorem{insig}{\it INSIGNIA}
+
+
+%MARGENES
+\marginsize{2cm}{2cm}{2cm}{2cm}
+
+
+%RUTINA PARA PONER LA IMAGEN DE FONDO DE LA PRIMERA PAGINA 
+\newcommand{\BackgroundImage}[1]{
+  \AddToShipoutPicture*{
+    \put(0,0){
+      \parbox[b][\paperheight]{\paperwidth}{
+	\vfill
+	\centering
+	\includegraphics[width=15cm,height=15cm,
+	keepaspectratio]{#1.png}
+	\vfill
+      }
+    }
+  }
+}
+
+%RUTINA PARA INSERTAR IMAGENES AL TRABAJO
+%RECIBE
+%RUTA DE LA IMAGEN
+%NOMBRE DE LA IMAGEN
+%REFERENCIA DE LA IMAGEN <-- PARA PODER NOMBRARLA 
+\newcommand{\IncludeImage}[3]{
+  \begin{figure}[ht!]
+    \centering
+      \includegraphics[width=#2mm]{#1.png}
+      \caption{#3}
+      %\label{#4}
+  \end{figure}
+}
+
+\author{
+
+
+}
+
+\title{
+
+
+}
+
+\begin{document}
+
+\end{document}
+
+
