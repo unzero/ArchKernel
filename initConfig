@@ -7,6 +7,15 @@ sudo pacman -S lib32-ati-dri xf86-video-ati
 #CONFIGURACION DE LA TARJETA DE VIDEO EN EL PORTATIL
 #sudo pacman -S lib32-video-intel nvidia bbswitch mesa bumblebee lib32-nvidia-utils lib32-mesa-libgl lib32-mesa 
 
+#CONFIGURACION DE LA TARJETA DE RED LLOLOLOLOLOLOLOL
+#PARA PODER USAR LA RED WIFI AL TIEMPO CON LA RED CABLEADA SE DEBE CONFIGURAR EL CLIENTE DHCP
+#PARA ELLO SE DEBE INSTALAR EL SIGUIENTE DEMONIO
+#sudo pacman -S dhclient
+#LUEGO SE DEBE CONFIGURAR EL SIGUIENTE ARCHIVO 
+#/etc/NetworkManager/NetworkManager.conf
+#AGREGANDO 
+#dhcp=dhclient
+
 #MANEJO DEL VENTILADOR ¡SOLO PARA TARJETAS CONFIGURADAS BAJO EL CONTROLADOR ATI!
 sudo KERNEL=="card0", SUBSYSTEM=="drm", DRIVERS=="radeon", ATTR{device/power_method}="profile", ATTR{device/power_profile}="low" > /etc/udev/rules.d/30-radeon-pm.rules 
 
@@ -44,6 +53,11 @@ sudo pacman -S transmission-gtk
 #ESCRITURA EN JAPONES
 sudo pacman -S anthy uim
 #DICCIONARIO DE JAPONES
+#VER tagainijisho.bash ADJUNTO
+#PARA PODER HABILILTAR EL USO EN FIREFOX Y DEMAS
+#sudo pacman -S scim scim-anthy
+#LUEGO LO CONFIGURO EJECUTO Y DESINSTALO
+#reinstalo uim e anthy (?)
 
 #CONFIGURACION PARA UIM 
 #TODO ESTO EN EL ARCHIVO ~/.xprofile
@@ -63,8 +77,8 @@ pacman -S hunspell hunspell-es hunspell-en
 pacman -S hyphen hyphen-es
 
 #PROGRAMAS DE TRABAJO
-sudo pacman -S geogebra synergy 
-
+sudo pacman -S geogebra synergy gedit
+sudo pacman -S vsftps
 #TAREAS VARIAS
 sudo pacman -S dosfstools
 sudo pacman -S ntfs
@@ -97,4 +111,4 @@ sudo pacman -S vlc
 
 #VERSION CON GNOME
 #sudo pacman -S gnome gnome-tweak-tool
-
+#sudo systemctl enable NetworkManager
