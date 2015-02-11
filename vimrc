@@ -40,6 +40,11 @@ autocmd FileType cpp  :iabbrev <buffer> include #include<><left>
 "autocmd BufWritePre *.cpp :normal gg=G
 augroup END
 
+"GRUPO DE COMANDOS PARA PYTHON
+augroup pythonpy
+autocmd BufNewFile *.py :r /home/ui/header/py_header.py
+augroup END
+
 "HEADER PARA LOS ARCHIVOS LATEX
 "autocmd FileType tex :iabbrev <buffer> header <esc>:r /home/unzero/header/preamble.tex
 autocmd BufNewFile *.tex :r /home/ui/header/preamble.tex

@@ -35,6 +35,15 @@ using namespace std;
 #define pi(a) printf("%d\n",a)
 #define ps(a) printf("%s\n",a)
 #define si(a) scanf("%d",&a)
+#define print_int_matrix(mat,n) rep(i,n-1){printf("%d ",mat[i]);}printf("%d\n",mat[n-1]);
+#define print_string_matrix(mat,n) rep(i,n-1){printf("%s ",mat[i]);}printf("%s\n",mat[n-1]);
+#define mkp(a,b) make_pair(a,b)
+#define fnd(table,e) (find(table.begin(),table.end(),e) != table.end())
+
+//TYPOS DE DATOS PERSONALES
+typedef unsigned int _set;
+typedef unsigned long _lset;
+typedef pair<int,int> pii;
 
 string sint(int i){
    stringstream buf;
@@ -48,6 +57,12 @@ ofstream fout("output.txt");
 #define cin fin
 #define cout fout
 */
+
+int dx[] = {-1,0,0,1};
+int dy[] = {0,-1,1,0};
+int dx8[] = {-1,-1,-1,0,0,1,1,1};
+int dy8[] = {-1,0,1,-1,1,-1,0,1};
+
 
 int main(){
    return 0;
