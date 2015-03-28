@@ -12,7 +12,7 @@ PermitRootLogin no
 AuthorizedKeysFile	.ssh/authorized_keys
 
 # Banner del servidor
-Banner "Intentando conectarse a $HOSTNAME"
+Banner /etc/ssh/sshd_banner
 
 # Other configuration
 ChallengeResponseAuthentication no
