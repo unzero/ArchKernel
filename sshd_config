@@ -1,0 +1,24 @@
+#---------------------------ARCHIVO DE CONFIGURACION PARA EL DEMONIO DE SSH------------------- 
+# Escrito por: Ciro Iván García López - Universidad Nacional de Colombia 
+# Para plataformas arch linux el archivo debe remplazar a /etc/ssh/sshd_config
+
+# En esta linea se indican los usuarios a los cuales se les garantiza el acceso por ssh
+AllowUsers ushio
+
+# Niega la autenticacion de root por medio de ssh 
+PermitRootLogin no
+
+# Llaves autorizadas para el acceso 
+AuthorizedKeysFile	.ssh/authorized_keys
+
+# Banner del servidor
+Banner "Intentando conectarse a $HOSTNAME"
+
+# Other configuration
+ChallengeResponseAuthentication no
+UsePAM yes
+PrintMotd no # pam does that
+UsePrivilegeSeparation sandbox		# Default for new installations.
+Subsystem	sftp	/usr/lib/ssh/sftp-server
+
+
