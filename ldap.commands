@@ -1,0 +1,3 @@
+#
+ldapadd -D "cn=Manager,dc=ball,dc=org" -W -f file.ldif
+ldappasswd -s welcome123 -W -D "cn=Manager,dc=ball,dc=com" -x "uid=$NAME,ou=People,dc=ball,dc=com"

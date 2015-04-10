@@ -1,0 +1,18 @@
+dn: uid=ciroivan,ou=People,dc=ball,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: ciroivan
+cn: Ciro Garcia
+sn: Garcia
+givenName: Ciro
+title: Ball.com user
+userPassword: {CRYPT}xxxxxxxxxx
+loginShell: /bin/bash
+uidNumber: 10001
+gidNumber: 10001
+homeDirectory: /home/ciroivan/
+description: This is an user of ball.com domain
