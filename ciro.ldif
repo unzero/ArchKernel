@@ -1,3 +1,6 @@
+#-------------------------------EJEMPLO DE LDIF PARA LDAP ---------------------
+#Escrito por: Ciro Iván García López - Universidad Nacional de Colombia
+
 dn: uid=ciroivan,ou=People,dc=ball,dc=com
 objectClass: top
 objectClass: person
