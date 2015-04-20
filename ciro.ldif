@@ -1,21 +1,21 @@
 #-------------------------------EJEMPLO DE LDIF PARA LDAP ---------------------
 #Escrito por: Ciro Iván García López - Universidad Nacional de Colombia
 
-dn: uid=ciroivan,ou=People,dc=ball,dc=com
+dn: uid=tsukiko,ou=People,dc=ball,dc=com
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
 objectClass: inetOrgPerson
 objectClass: posixAccount
 objectClass: shadowAccount
-uid: ciroivan
-cn: Ciro Garcia
-sn: Garcia
-givenName: Ciro
+uid: tsukiko
+cn: Tsukukakushi Tsukiko
+sn: Tsukukakushi
+givenName: Tsukiko
 title: Ball.com user
 userPassword: {CRYPT}xxxxxxxxxx
 loginShell: /bin/bash
 uidNumber: 10001
 gidNumber: 10001
-homeDirectory: /home/ciroivan/
+homeDirectory: /home/tsukiko
 description: This is an user of ball.com domain
