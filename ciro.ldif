@@ -1,6 +1,7 @@
 #-------------------------------EJEMPLO DE LDIF PARA LDAP ---------------------
 #Escrito por: Ciro Iván García López - Universidad Nacional de Colombia
 
+#Aqui se debe cambiar el uid por el nombre de usuario
 dn: uid=tsukiko,ou=People,dc=ball,dc=com
 objectClass: top
 objectClass: person
@@ -8,9 +9,14 @@ objectClass: organizationalPerson
 objectClass: inetOrgPerson
 objectClass: posixAccount
 objectClass: shadowAccount
+#Cambiar los campos
+#nombre de usuario
 uid: tsukiko
+#nombre real
 cn: Tsukukakushi Tsukiko
+#Apellido
 sn: Tsukukakushi
+#nombre
 givenName: Tsukiko
 title: Ball.com user
 userPassword: {CRYPT}xxxxxxxxxx

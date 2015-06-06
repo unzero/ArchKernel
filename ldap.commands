@@ -1,3 +1,5 @@
-#
+# aquí file.ldif es el nombre del archivo ldif
 ldapadd -D "cn=Manager,dc=ball,dc=org" -W -f file.ldif
+# aquí welcome123 es la clave que se le va a asignar
+# en vez de $NAME se debe poner el nombre de usuario creado con el ldif
 ldappasswd -s welcome123 -W -D "cn=Manager,dc=ball,dc=com" -x "uid=$NAME,ou=People,dc=ball,dc=com"
