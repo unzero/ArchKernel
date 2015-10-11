@@ -9,17 +9,32 @@
 \usepackage{CJKutf8}
 \usepackage{longtable}
 \usepackage{hyperref}
+\usepackage{draftwatermark}
+\usepackage{pgf,tikz}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{multicol}
+\usepackage{caption}
+\usetikzlibrary{arrows}
+%EVITA CONFICTOS ENTRE BABEL Y TIKZ
+\usepackage{etoolbox}
+\AtBeginEnvironment{tikzpicture}{\shorthandoff{>}\shorthandoff{<}}{}{}
 
 
 %SIRVE PARA GENERAR AUTOMATICAMENTE LAS ENUMERACIONES EN DEFINICIONES
 \newtheorem{defi}{\it DEFINICI\'ON}
 \newtheorem{algo}{\it ALGORITMO}
 \newtheorem{insig}{\it INSIGNIA}
-
+\newcommand{\quotes}[1]{``#1''}
 
 %MARGENES
 \marginsize{2cm}{2cm}{2cm}{2cm}
-
+%MARCA DE AGUA
+\SetWatermarkText{@ui}
+%\SetWatermarkScale{0.25}
+\SetWatermarkColor[gray]{1}
 
 %RUTINA PARA PONER LA IMAGEN DE FONDO DE LA PRIMERA PAGINA 
 \newcommand{\BackgroundImage}[1]{
@@ -52,16 +67,19 @@
 
 \author{
 
-
 }
 
 \title{
 
-
 }
 
 \begin{document}
+{
 
+   %\bibliography{biblio}
+	%\bibliographystyle{alpha}
+	%\nocite{*}
+}
 \end{document}
 
 
